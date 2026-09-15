@@ -8,7 +8,7 @@ user_id = 15
 # TODO:
 # Build this URL:
 # https://api.example.com/users/15
-url = ""
+url = "https://api.example.com/users/15"
 
 print(url)
 
@@ -21,7 +21,7 @@ product_id = 42
 # TODO:
 # Build this URL:
 # https://api.example.com/products/42
-product_url = ""
+product_url = "https://api.example.com/products/42"
 
 print(product_url)
 
@@ -34,6 +34,7 @@ student_id = 8
 # TODO:
 # Build this URL:
 # https://school.example.com/students/8
-student_url = ""
+student_url = " https://school.example.com/students/8"
 
 print(student_url)
+
