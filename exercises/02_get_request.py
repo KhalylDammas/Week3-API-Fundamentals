@@ -1,11 +1,12 @@
 import requests
+import json
 
 URL = "https://api.restful-api.dev/objects"
 
 
 # TODO 1:
 # Send a GET request to URL and store the response.
-response = requests.get("https://api.restful-api.dev/objects")
+response = requests.get(URL)
 
 
 # TODO 2:
@@ -18,8 +19,8 @@ data = response.json()
 
 # TODO 4:
 # Print the returned data.
-print(data)
+print(json.dumps(data, indent=4))
 
 # TODO 5:
 # Print how many objects were returned.
-print()
+print(len(data))
