@@ -24,7 +24,7 @@ product_id = 42
 # https://api.example.com/products/42
 product_url = "https://api.example.com/products/42"
 url_component =[base_url,resource,str(user_id)]
-url = "https://api.example.com/products/42".join(product_url)
+url = product_url.upper()
 
 print(product_url)
 
@@ -39,7 +39,7 @@ student_id = 8
 # https://school.example.com/students/8
 student_url = " https://school.example.com/students/8"
 url_component = [base_url,resource,str(user_id)]
-url =  "https://school.example.com/students/8".join(student_url)
+url =  student_url.lower()
 
 print(student_url)
 
