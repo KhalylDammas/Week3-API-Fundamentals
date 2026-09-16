@@ -12,3 +12,16 @@ Use https://dummyjson.com/posts/1 and complete these requirements:
 """
 
 import requests
+response = requests.get(" https://dummyjson.com/posts/1")
+
+data =response.json()
+
+print(data["id"])
+
+print(data["title"])
+
+print(data["body"])
+
+print(response.status_code)
+
+print(data["reactions"]["likes"])

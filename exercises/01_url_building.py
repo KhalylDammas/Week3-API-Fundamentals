@@ -5,10 +5,11 @@ base_url = "https://api.example.com"
 resource = "users"
 user_id = 15
 
-# TODO:
+url_component = [base_url,resource,str(user_id)]
+url = "/".join(url_component)
 # Build this URL:
 # https://api.example.com/users/15
-url = ""
+
 
 print(url)
 
@@ -18,10 +19,9 @@ base_url = "https://api.example.com"
 resource = "products"
 product_id = 42
 
-# TODO:
-# Build this URL:
-# https://api.example.com/products/42
-product_url = ""
+
+# Here are going to create this URL using f-strings.
+product_url = f"{base_url}/{resource}/{product_id}"
 
 print(product_url)
 
@@ -31,9 +31,13 @@ base_url = "https://school.example.com"
 resource = "students"
 student_id = 8
 
-# TODO:
+
+student_url = base_url + "/" + resource + "/" + str(student_id)
+print(student_url)
+
+
 # Build this URL:
 # https://school.example.com/students/8
-student_url = ""
 
-print(student_url)
+
+
