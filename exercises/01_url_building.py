@@ -8,7 +8,8 @@ user_id = 15
 # TODO:
 # Build this URL:
 # https://api.example.com/users/15
-url = "https://api.example.com/users/15"
+url_component = [base_url,resource,str(user_id)]
+url = "https://api.example.com".join(url_component)
 
 print(url)
 
